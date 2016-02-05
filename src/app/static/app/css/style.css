@@ -996,7 +996,7 @@ border: 1px solid #e6e6e6;
 	display:block;
 }
 .pricing-box-alt.special .pricing-heading {
-	background: #fcfcfc;
+	background: #699044;
 	text-align: center;
 	padding:40px 0 1px 0;
 	border-bottom:none;
@@ -1779,20 +1779,11 @@ article img.pull-right, article .align-right{
 }
 
 
-/* =============================
-21. Personal CSS
-============================= */
-
-.licensing-block {
-    padding: 0 50px;
-    margin: 0 auto;
-    text-align: left;
-}
 
 
 
 /* =============================
-22. Media queries
+21. Media queries
 ============================= */
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -1986,3 +1977,7 @@ article img.pull-right, article .align-right{
 @media (max-width: 360px) {
 
 }
+
+
+
+
