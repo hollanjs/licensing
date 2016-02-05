@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Created by https://www.gitignore.io/api/python,django,virtualenv
 
 ### Python ###
@@ -75,20 +76,6 @@ db.sqlite3
 media
 
 
-### VirtualEnv ###
-# Virtualenv
-# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
-.Python
-[Bb]in
-[Ii]nclude
-[Ll]ib
-[Ll]ib64
-[Ll]ocal
-[Ss]cripts
-pyvenv.cfg
-.venv
-pip-selfcheck.json
-
 
 # Created by https://www.gitignore.io/api/sublimetext
 
@@ -107,3 +94,11 @@ pip-selfcheck.json
 
 # sftp configuration file
 sftp-config.json
+=======
+.DS_STORE
+build/
+components/
+bower_components/
+node_modules/
+test.html
+>>>>>>> 6361b872d616337f0fd23b9a32be07f7b50512d3
