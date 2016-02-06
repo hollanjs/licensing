@@ -7,31 +7,11 @@ $(function() {
         });
     console.log("switches loaded!");
 
-    sel_licensors = [];
+    // sel_licensors = [];
 
     $(document).on('change', '.js-switch', function (event) {
-
-    	selection = event.currentTarget
-    	licensingText = $(#licensing-block);
-
-    	console.log(licensingText.html);
-
-    	if (selection.checked == true) {
-
-    		sel_licensors.push(selection.id);
-    		console.log(sel_licensors);
-
-    	} else if (selection.checked == false) {
-
-    		index = sel_licensors.indexOf(selection.id)
-
-    		if (index > -1) {
-	    		sel_licensors.splice(index,1);
-	    	}
-
-    		console.log(sel_licensors);
-
-    	}
+    	selection = event.currentTarget;
+    	$('.licensing-block #' + selection.id).toggle();
     });
 
 
