@@ -11,3 +11,32 @@
 footer {
     padding: 2px 0 0 0;
 }
+
+.nav > li > a {
+    text-decoration: none;
+    color: #EFEFEF;
+} 
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #54954A;
+    color: #EFEFEF;
+} 
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #EFEFEF;
+    background-color: #54954A;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #54954A #54954A transparent;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    cursor: default;
+}
+
+.tab-pane {
+	max-height: 80%;
+}

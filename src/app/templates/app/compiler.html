@@ -11,7 +11,7 @@
 <!-- css -->
 <link href="{% static "app/css/bootstrap.min.css" %}" rel="stylesheet" />
 <link href="{% static "app/css/fancybox/jquery.fancybox.css" %}" rel="stylesheet">
-<link href="{% static "app/css/jcarousel.css" %}" rel="stylesheet" />
+<!-- <link href="{% static "app/css/jcarousel.css" %}" rel="stylesheet" /> -->
 <link href="{% static "app/css/flexslider.css" %}" rel="stylesheet" />
 <link href="{% static "app/css/style.css" %}" rel="stylesheet" />
 <link href="{% static "app/css/switchery.min.css" %}" rel="stylesheet" />
@@ -71,7 +71,7 @@
 				<div class="pricing-box-alt">
 					<div class="pricing-action">
 						<p class="text-muted licensing-block">
-							This is the GreenLight Legal Line.
+							This is the GreenLight Legal Line. non formatted year: &copy; 2014 | new dynamic year: &copy; [YEAR].
 							{% for lic in licensors %}
 								<span id="{{ lic.pk }}" style="display:none;">{{ lic.legal }}</span>
 							{% endfor %}
