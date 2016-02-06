@@ -186,9 +186,15 @@ but feel free to uncomment below and copy and paster where you need some spacing
 					</div> -->
 					<div class="pricing-content">
 						<ul>
-							<li><strong>No hidden fees</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>Free 30-days trial</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>Stop anytime easily</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
+							{% if licensors %}
+								{% for licensor in licensors %}
+									{% if licensor.lic_type == 'c' %}
+										<li><strong> {{ licensor.name }} </strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input id="{{ licensor.pk }}" type="checkbox" class="js-switch" /> </li>
+									{% endif %}
+								{% endfor %}
+							{% else %}
+								<li>You need to create some Car Manufacturer licensors!</li>
+							{% endif %}
 						</ul>
 					</div>
 				</div>
@@ -203,11 +209,15 @@ but feel free to uncomment below and copy and paster where you need some spacing
 					</div> -->
 					<div class="pricing-content">
 						<ul>
-							<li><strong>100 applications</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>24x7 support available</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>No hidden fees</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>Free 30-days trial</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>Stop anytime easily</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
+							{% if licensors %}
+								{% for licensor in licensors %}
+									{% if licensor.lic_type == 'w' %}
+										<li><strong> {{ licensor.name }} </strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input id="{{ licensor.pk }}" type="checkbox" class="js-switch" /> </li>
+									{% endif %}
+								{% endfor %}
+							{% else %}
+								<li>You need to create some Car Manufacturer licensors!</li>
+							{% endif %}
 						</ul>
 					</div>
 				</div>
@@ -222,11 +232,15 @@ but feel free to uncomment below and copy and paster where you need some spacing
 					</div> -->
 					<div class="pricing-content">
 						<ul>
-							<li><strong>100 applications</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>24x7 support available</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>No hidden fees</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>Free 30-days trial</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>Stop anytime easily</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
+							{% if licensors %}
+								{% for licensor in licensors %}
+									{% if licensor.lic_type == 'h' %}
+										<li><strong> {{ licensor.name }} </strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input id="{{ licensor.pk }}" type="checkbox" class="js-switch" /> </li>
+									{% endif %}
+								{% endfor %}
+							{% else %}
+								<li>You need to create some Car Manufacturer licensors!</li>
+							{% endif %}
 						</ul>
 					</div>
 				</div>
@@ -241,11 +255,15 @@ but feel free to uncomment below and copy and paster where you need some spacing
 					</div> -->
 					<div class="pricing-content">
 						<ul>
-							<li><strong>100 applications</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>24x7 support available</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>No hidden fees</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>Free 30-days trial</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
-							<li><strong>Stop anytime easily</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input type="checkbox" class="js-switch" /> </li>
+							{% if licensors %}
+								{% for licensor in licensors %}
+									{% if licensor.lic_type == 'm' %}
+										<li><strong> {{ licensor.name }} </strong>&nbsp;&nbsp;|&nbsp;&nbsp;<input id="{{ licensor.pk }}" type="checkbox" class="js-switch" /> </li>
+									{% endif %}
+								{% endfor %}
+							{% else %}
+								<li>You need to create some Car Manufacturer licensors!</li>
+							{% endif %}
 						</ul>
 					</div>
 				</div>
