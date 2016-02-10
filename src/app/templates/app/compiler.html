@@ -70,16 +70,16 @@
 			<div class="col-lg-12">
 				<div class="pricing-box-alt">
 					<div class="pricing-action">
-						<p class="text-muted licensing-block">
-							This is the GreenLight Legal Line. non formatted year: &copy; 2014 | new dynamic year: &copy; [YEAR].
+						<p class="text-muted licensing-block" id="copyTarget">
+							©[YEAR] GreenLight LLC, 5855 West 74th Street Indianapolis, IN 46278, All Rights Reserved. GreenLight is a registered trademark of GreenLight LLC.
 							{% for lic in licensors %}
 								<span id="{{ lic.pk }}" style="display:none;">{{ lic.legal }}</span>
 							{% endfor %}
 						</p>
 					</div>
-					<div class="pricing-action">
-						<a href="#" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> Copy to Pasteboard!</a>
-					</div>
+<!-- 					<div class="pricing-action">
+						<a href="#" class="btn btn-medium btn-theme" id="copyButton">Copy to Pasteboard!</a>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -228,7 +228,7 @@ but feel free to uncomment below and copy and paster where you need some spacing
 			<div class="col-lg-3">
 				<div class="pricing-box-alt special">
 					<div class="pricing-heading">
-						<h3><strong>Movie</strong> Studios</h3>
+						<h3><strong>Holly</strong>wood</h3>
 					</div>
 					<!-- <div class="pricing-terms">
 						<h6>&#36;15.00 / Month</h6>
